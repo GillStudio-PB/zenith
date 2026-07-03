@@ -1,83 +1,109 @@
-# 🚀 Zenith Finance
-
 <div align="center">
 
-# 💰 Zenith
-### Personal Finance Management Platform for UAE Workers
+<img src="assets/logo.png" width="180" alt="Zenith Logo"/>
 
-A modern **Flutter** application built to help **Dubai / UAE workers** manage salary, overtime, savings, loans, transfers and daily expenses through a clean, offline-first experience.
+# 💰 Zenith Finance
+
+### Personal Finance Platform for UAE Workers 🇦🇪
+
+*A modern Flutter application that helps UAE workers manage salary, overtime, savings, expenses, loans and family remittances.*
+
+<p>
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-Enabled-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Riverpod](https://img.shields.io/badge/Riverpod-State%20Management-40C4FF?style=for-the-badge)
 ![Material3](https://img.shields.io/badge/Material%203-Modern_UI-6750A4?style=for-the-badge)
+
+</p>
+
+**Your Finance. Your Future.**
 
 </div>
 
 ---
 
-# 📖 Overview
+# 📖 About
 
-Zenith is a finance management app designed specifically for workers living in the UAE.
+Zenith is a finance management platform created specifically for people working in the **United Arab Emirates**.
 
-It helps users:
-
-- 💰 Track Salary
-- ⏱ Calculate Overtime
-- 💸 Manage Expenses
-- 📈 Build Savings
-- 👨‍👩‍👧 Send Money Home
-- 💱 Convert AED ↔ INR
-- 🏦 Track Loans
-- 🪙 Monitor Gold Price
-- ✈ Track Trips
-- 🤖 AI Financial Assistant
+The goal is simple: provide one secure application where users can manage every aspect of their financial life—from salary and overtime to savings, expenses, transfers and long-term goals.
 
 ---
 
-# ✨ Modules
+# ✨ Features
+
+## 💼 Income Management
+- Salary Tracking
+- Payroll Management
+- Overtime Calculator
+- Attendance Records
+
+## 💸 Financial Management
+- Expense Tracking
+- Budget Planning
+- Savings Goals
+- Loan Management
+- Vault
+
+## 🌍 UAE Utilities
+- AED ↔ INR Currency Converter
+- Gold Price Tracker
+- MOHRE RSS Updates
+- Trip Management
+
+## 🤖 Productivity
+- AI Assistant
+- Calendar
+- Notes
+- Reports
+- Dashboard
+
+---
+
+# 📱 Modules
 
 | Module | Status |
-|--------|--------|
+|---------|:------:|
 | Dashboard | ✅ |
 | Finance | ✅ |
 | Payroll | ✅ |
-| Transfers | ✅ |
-| Goals | ✅ |
-| Loans | ✅ |
-| Gold | ✅ |
-| Forex Converter | ✅ |
-| Calendar | ✅ |
 | Attendance | ✅ |
+| Loans | ✅ |
+| Goals | ✅ |
+| Transfers | ✅ |
+| Forex Converter | ✅ |
+| Gold Tracker | ✅ |
+| Calendar | ✅ |
 | Notes | ✅ |
 | AI Assistant | ✅ |
+| Trips | ✅ |
 | Vault | ✅ |
 | Settings | ✅ |
 
 ---
 
-# 🏗 Project Architecture
+# 🏗️ Architecture
 
-```
-Presentation
-     │
- Screens
-     │
- Providers
-     │
- Database Service
-     │
- Local Database
+```text
+Presentation Layer
+        │
+      Screens
+        │
+     Providers
+        │
+ Business Services
+        │
+ Local Database / Firebase
 ```
 
 ---
 
-# 📂 Project Structure
+# 📂 Folder Structure
 
 ```text
 lib/
-│
 ├── db/
 │   ├── database_service.dart
 │   └── models.dart
@@ -87,28 +113,26 @@ lib/
 │   └── forex_provider.dart
 │
 ├── screens/
-│   ├── about_screen.dart
-│   ├── ai_assistant_screen.dart
-│   ├── attendance_screen.dart
-│   ├── calendar_screen.dart
 │   ├── dashboard_screen.dart
 │   ├── finance_screen.dart
-│   ├── fines_screen.dart
-│   ├── forex_converter_screen.dart
-│   ├── goals_screen.dart
-│   ├── gold_screen.dart
-│   ├── loans_screen.dart
-│   ├── login_screen.dart
-│   ├── main_layout.dart
-│   ├── mohre_rss_screen.dart
-│   ├── more_screen.dart
-│   ├── notes_screen.dart
 │   ├── payroll_screen.dart
-│   ├── settings_screen.dart
-│   ├── splash_screen.dart
+│   ├── attendance_screen.dart
+│   ├── goals_screen.dart
+│   ├── loans_screen.dart
 │   ├── transfers_screen.dart
+│   ├── forex_converter_screen.dart
+│   ├── gold_screen.dart
+│   ├── ai_assistant_screen.dart
+│   ├── calendar_screen.dart
+│   ├── notes_screen.dart
 │   ├── trips_screen.dart
-│   └── vault_screen.dart
+│   ├── vault_screen.dart
+│   ├── mohre_rss_screen.dart
+│   ├── settings_screen.dart
+│   ├── more_screen.dart
+│   ├── login_screen.dart
+│   ├── splash_screen.dart
+│   └── main_layout.dart
 │
 ├── env.dart
 ├── router.dart
@@ -117,7 +141,7 @@ lib/
 
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Tech Stack
 
 - Flutter
 - Dart
@@ -143,18 +167,31 @@ flutter run
 
 ---
 
-# 🗺 Roadmap
+# 🗺️ Roadmap
 
-- ✅ Core Finance Modules
-- ✅ Dashboard
-- ✅ Payroll
-- ✅ Loans
-- ✅ Forex
-- 🔄 Firebase Sync
+- ✅ Core Modules
+- 🔄 Firebase Synchronization
+- 🔄 Cloud Backup
 - 🔄 Reports & Analytics
-- 🔄 Notifications
+- 🔄 Push Notifications
 - ⏳ AI Financial Insights
-- ⏳ Cloud Backup
+- ⏳ Investment Tracking
+
+---
+
+# 📸 Screenshots
+
+Create an `assets/screenshots/` folder and add:
+
+```text
+dashboard.png
+finance.png
+payroll.png
+goals.png
+transfers.png
+```
+
+Then display them inside the README.
 
 ---
 
@@ -162,17 +199,28 @@ flutter run
 
 **Manpreet Singh**
 
-Flutter Developer • Firebase • Mobile Solutions
+Flutter Developer • Firebase • Offline-First Mobile Apps
 
 - GitHub: https://github.com/GillStudio-PB
-- LinkedIn: https://linkedin.com/in/manpreet-singh-92276041b
+- LinkedIn: https://www.linkedin.com/in/manpreet-singh-92276041b/
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+- ⭐ Star the repository
+- 🍴 Fork the project
+- 🤝 Contribute improvements
+- 🐛 Report issues
 
 ---
 
 <div align="center">
 
-### ⭐ If you found this project useful, consider giving it a Star!
+### Built with ❤️ using Flutter
 
-Made with ❤️ using Flutter.
+**Zenith — Your Finance. Your Future.**
 
 </div>
