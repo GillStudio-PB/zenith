@@ -1,0 +1,9 @@
+/.dart_tool
+/.flutter-plugins-dependencies
+/analysis_options.yaml
+/android
+/assets
+/build
+/dubai_worker_finance.iml
+/pubspec.lock
+/zenith.iml
