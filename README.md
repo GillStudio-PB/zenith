@@ -5,19 +5,13 @@
 # 💰 Zenith
 ### Personal Finance Management Platform for UAE Workers
 
-<p align="center">
-A modern Flutter application that helps UAE workers manage salary, overtime, expenses, savings and family remittances with an offline‑first architecture.
-</p>
-
-<p align="center">
+A modern **Flutter** application built to help **Dubai / UAE workers** manage salary, overtime, savings, loans, transfers and daily expenses through a clean, offline-first experience.
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Firebase](https://img.shields.io/badge/Firebase-Enabled-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Riverpod](https://img.shields.io/badge/Riverpod-State%20Management-40C4FF?style=for-the-badge)
-![Material3](https://img.shields.io/badge/Material%203-6750A4?style=for-the-badge)
-
-</p>
+![Material3](https://img.shields.io/badge/Material%203-Modern_UI-6750A4?style=for-the-badge)
 
 </div>
 
@@ -25,50 +19,57 @@ A modern Flutter application that helps UAE workers manage salary, overtime, exp
 
 # 📖 Overview
 
-Zenith is designed for workers living in the UAE who need a simple, modern and reliable way to manage their finances.
+Zenith is a finance management app designed specifically for workers living in the UAE.
 
-## ✨ Features
+It helps users:
 
-- 💰 Salary Management
-- ⏱️ Overtime Calculator
-- 💸 Expense Tracking
-- 📈 Savings Goals
-- 💱 AED ↔ INR Conversion
-- 👨‍👩‍👧 Family Remittance Planning
-- 📊 Reports & Analytics
-- ☁️ Firebase Sync
-- 📱 Offline First
-- 🔒 Secure Authentication
+- 💰 Track Salary
+- ⏱ Calculate Overtime
+- 💸 Manage Expenses
+- 📈 Build Savings
+- 👨‍👩‍👧 Send Money Home
+- 💱 Convert AED ↔ INR
+- 🏦 Track Loans
+- 🪙 Monitor Gold Price
+- ✈ Track Trips
+- 🤖 AI Financial Assistant
 
 ---
 
-# 🏗️ Architecture
+# ✨ Modules
 
-```text
+| Module | Status |
+|--------|--------|
+| Dashboard | ✅ |
+| Finance | ✅ |
+| Payroll | ✅ |
+| Transfers | ✅ |
+| Goals | ✅ |
+| Loans | ✅ |
+| Gold | ✅ |
+| Forex Converter | ✅ |
+| Calendar | ✅ |
+| Attendance | ✅ |
+| Notes | ✅ |
+| AI Assistant | ✅ |
+| Vault | ✅ |
+| Settings | ✅ |
+
+---
+
+# 🏗 Project Architecture
+
+```
 Presentation
      │
- Riverpod
+ Screens
      │
- Business Logic
+ Providers
      │
- Repository
-  ┌──┴──┐
-Firebase Isar
+ Database Service
+     │
+ Local Database
 ```
-
----
-
-# 🛠 Tech Stack
-
-| Technology | Usage |
-|------------|-------|
-| Flutter | UI |
-| Dart | Language |
-| Firebase | Backend |
-| Riverpod | State Management |
-| Isar | Offline Database |
-| GoRouter | Navigation |
-| Material 3 | UI |
 
 ---
 
@@ -76,25 +77,59 @@ Firebase Isar
 
 ```text
 lib/
-├── app/
-├── core/
-├── shared/
-├── features/
-│   ├── auth/
-│   ├── dashboard/
-│   ├── salary/
-│   ├── overtime/
-│   ├── expenses/
-│   ├── savings/
-│   ├── remittance/
-│   ├── reports/
-│   └── settings/
+│
+├── db/
+│   ├── database_service.dart
+│   └── models.dart
+│
+├── providers/
+│   ├── app_providers.dart
+│   └── forex_provider.dart
+│
+├── screens/
+│   ├── about_screen.dart
+│   ├── ai_assistant_screen.dart
+│   ├── attendance_screen.dart
+│   ├── calendar_screen.dart
+│   ├── dashboard_screen.dart
+│   ├── finance_screen.dart
+│   ├── fines_screen.dart
+│   ├── forex_converter_screen.dart
+│   ├── goals_screen.dart
+│   ├── gold_screen.dart
+│   ├── loans_screen.dart
+│   ├── login_screen.dart
+│   ├── main_layout.dart
+│   ├── mohre_rss_screen.dart
+│   ├── more_screen.dart
+│   ├── notes_screen.dart
+│   ├── payroll_screen.dart
+│   ├── settings_screen.dart
+│   ├── splash_screen.dart
+│   ├── transfers_screen.dart
+│   ├── trips_screen.dart
+│   └── vault_screen.dart
+│
+├── env.dart
+├── router.dart
 └── main.dart
 ```
 
 ---
 
-# 🚀 Installation
+# 🛠 Tech Stack
+
+- Flutter
+- Dart
+- Firebase
+- Riverpod
+- Material 3
+- REST APIs
+- Git & GitHub
+
+---
+
+# 🚀 Getting Started
 
 ```bash
 git clone https://github.com/GillStudio-PB/zenith.git
@@ -108,35 +143,18 @@ flutter run
 
 ---
 
-# 🗺️ Roadmap
+# 🗺 Roadmap
 
-- ✅ Authentication
-- 🔄 Salary Module
-- 🔄 Overtime Module
-- 🔄 Expense Tracking
-- 🔄 Savings Goals
-- 🔄 Family Remittance
-- ⏳ Reports
-- ⏳ Notifications
-- ⏳ AI Insights
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork
-2. Create Branch
-3. Commit
-4. Push
-5. Pull Request
-
----
-
-# 📄 License
-
-MIT License
+- ✅ Core Finance Modules
+- ✅ Dashboard
+- ✅ Payroll
+- ✅ Loans
+- ✅ Forex
+- 🔄 Firebase Sync
+- 🔄 Reports & Analytics
+- 🔄 Notifications
+- ⏳ AI Financial Insights
+- ⏳ Cloud Backup
 
 ---
 
@@ -144,16 +162,17 @@ MIT License
 
 **Manpreet Singh**
 
-Flutter Developer • Firebase • Offline‑First Apps
+Flutter Developer • Firebase • Mobile Solutions
 
-GitHub: https://github.com/GillStudio-PB
-
-LinkedIn: https://linkedin.com/in/manpreet-singh-92276041b
+- GitHub: https://github.com/GillStudio-PB
+- LinkedIn: https://linkedin.com/in/manpreet-singh-92276041b
 
 ---
 
 <div align="center">
 
-### ⭐ Star this repository if you find it useful.
+### ⭐ If you found this project useful, consider giving it a Star!
+
+Made with ❤️ using Flutter.
 
 </div>
